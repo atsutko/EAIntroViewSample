@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7FBCDF03B6C7820AE173068 /* Pods_EAIntroViewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00613947EDED438EAD2D32DA /* Pods_EAIntroViewSample.framework */; };
 		C12E749A20EFD45100901DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E749920EFD45100901DF6 /* AppDelegate.swift */; };
 		C12E749C20EFD45100901DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E749B20EFD45100901DF6 /* ViewController.swift */; };
 		C12E749F20EFD45100901DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12E749D20EFD45100901DF6 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00613947EDED438EAD2D32DA /* Pods_EAIntroViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAIntroViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66528FA4C4F43B7FA3CE401 /* Pods-EAIntroViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAIntroViewSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EAIntroViewSample/Pods-EAIntroViewSample.debug.xcconfig"; sourceTree = "<group>"; };
 		C12E749620EFD45100901DF6 /* EAIntroViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAIntroViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12E749920EFD45100901DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C12E749B20EFD45100901DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C12E74A020EFD45400901DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C12E74A320EFD45400901DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C12E74A520EFD45400901DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22A0485B13025DB9423E384 /* Pods-EAIntroViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAIntroViewSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EAIntroViewSample/Pods-EAIntroViewSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FBCDF03B6C7820AE173068 /* Pods_EAIntroViewSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7755C2264C7EFA9E37F02C35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A66528FA4C4F43B7FA3CE401 /* Pods-EAIntroViewSample.debug.xcconfig */,
+				E22A0485B13025DB9423E384 /* Pods-EAIntroViewSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C12E748D20EFD45100901DF6 = {
 			isa = PBXGroup;
 			children = (
 				C12E749820EFD45100901DF6 /* EAIntroViewSample */,
 				C12E749720EFD45100901DF6 /* Products */,
+				7755C2264C7EFA9E37F02C35 /* Pods */,
+				D0EAFD0AF66360010A4C265D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = EAIntroViewSample;
 			sourceTree = "<group>";
 		};
+		D0EAFD0AF66360010A4C265D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00613947EDED438EAD2D32DA /* Pods_EAIntroViewSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C12E74A820EFD45400901DF6 /* Build configuration list for PBXNativeTarget "EAIntroViewSample" */;
 			buildPhases = (
+				7B97BD8FED3AD5427484F44F /* [CP] Check Pods Manifest.lock */,
 				C12E749220EFD45100901DF6 /* Sources */,
 				C12E749320EFD45100901DF6 /* Frameworks */,
 				C12E749420EFD45100901DF6 /* Resources */,
+				F44283B798294A7B516B659D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B97BD8FED3AD5427484F44F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EAIntroViewSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44283B798294A7B516B659D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EAIntroViewSample/Pods-EAIntroViewSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
+				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EAIntroViewSample/Pods-EAIntroViewSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C12E749220EFD45100901DF6 /* Sources */ = {
@@ -278,15 +345,13 @@
 		};
 		C12E74A920EFD45400901DF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66528FA4C4F43B7FA3CE401 /* Pods-EAIntroViewSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3E76788VZ5;
 				INFOPLIST_FILE = EAIntroViewSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TakaoAtsushi.EAIntroViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +361,13 @@
 		};
 		C12E74AA20EFD45400901DF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22A0485B13025DB9423E384 /* Pods-EAIntroViewSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3E76788VZ5;
 				INFOPLIST_FILE = EAIntroViewSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TakaoAtsushi.EAIntroViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
